@@ -6,6 +6,12 @@ import { Form, Button, Container } from 'react-bootstrap';
 
 const NewPostPage = () => {
 
+    const [post, setPost] = useState({
+        title: '',
+        author: '',
+        image: '',
+        content: '',
+    });
 
     const handleSubmit = async e => {
         e.preventDefault();
