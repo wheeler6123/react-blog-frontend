@@ -13,6 +13,15 @@ const NewPostPage = () => {
         content: '',
     });
 
+    const navigate = useNavigate();
+
+    const handleChange = e => {
+        setPost({
+            ...post,
+            [e.target.name]: e.target.value
+        });
+    }
+
     const handleSubmit = async e => {
         e.preventDefault();
         const post = {
