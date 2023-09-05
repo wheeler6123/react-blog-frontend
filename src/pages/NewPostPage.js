@@ -61,7 +61,7 @@ const NewPostPage = () => {
                     <Form.Control type='textarea' rows={5} name='content' onChange={handleChange}/>
                 </Form.Group>
                 <Button variant='primary' type='submit'>
-                    Submit
+                    Publish Post
                 </Button>
             </Form>
         </Container>
