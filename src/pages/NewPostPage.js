@@ -67,3 +67,5 @@ const NewPostPage = () => {
         </Container>
     )
 }
+
+export default NewPostPage;
