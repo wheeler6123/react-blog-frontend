@@ -40,25 +40,25 @@ const NewPostPage = () => {
                     <Form.Label>
                         Title
                     </Form.Label>
-                    <Form.Control type='text' name='title' placeholder='Title' onChange={handleChange}/>
+                    <Form.Control type='text' name='title' placeholder='Title' onChange={handleChange} required/>
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>
                         Author
                     </Form.Label>
-                    <Form.Control type='text' name='author' placeholder='Author' onChange={handleChange}/>
+                    <Form.Control type='text' name='author' placeholder='Author' onChange={handleChange} required/>
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>
                         Image URL
                     </Form.Label>
-                    <Form.Control type='text' name='image' placeholder='Image URL' onChange={handleChange}/>
+                    <Form.Control type='text' name='image' placeholder='Image URL' onChange={handleChange} required/>
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>
                         Content
                     </Form.Label>
-                    <Form.Control type='textarea' rows={5} name='content' onChange={handleChange}/>
+                    <Form.Control type='textarea' rows={5} name='content' onChange={handleChange} required/>
                 </Form.Group>
                 <Button variant='primary' type='submit'>
                     Publish Post
