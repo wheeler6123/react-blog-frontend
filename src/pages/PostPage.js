@@ -20,5 +20,28 @@ const PostPage = () => {
             setPost(res.data);
         }
         fetchPost();
-    }, [id]);
+    }, [id]); 
+
+    return (
+        <Container className='mt-4'>
+            <Card>
+                <div style={{maxHeight: '500px', overflow: 'hidden'}}>
+                    <Card.Img className='img-fluid' variant='top' src={post.image} alt={post.title}/>
+                </div>
+                <Card.Body>
+                    <Card.Title>
+                        {post.title}
+                    </Card.Title>
+                    <Card.Subtitle>
+                        By: {post.author}
+                    </Card.Subtitle>
+                    <Card.Text>
+                        {post.content}
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </Container>
+    )
 }
+
+export default PostPage;
