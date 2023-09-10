@@ -32,7 +32,7 @@ const PostPage = () => {
                     <Card.Title>
                         {post.title}
                     </Card.Title>
-                    <Card.Subtitle>
+                    <Card.Subtitle className='mb-2 text-muted'>
                         By: {post.author}
                     </Card.Subtitle>
                     <Card.Text>
