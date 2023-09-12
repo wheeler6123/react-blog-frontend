@@ -15,5 +15,11 @@ const HomePage = () => {
         fetchPosts();
     }, [])
 
+    const handleDelete = async (id) => {
+        await axios.delete(`http://localhost:5000/posts/${id}`);
+        const newPosts = posts.filter(post => post.id !== id);
+        setPosts(newPosts);
+    }
+
     
 }
