@@ -24,11 +24,13 @@ const NewPostPage = () => {
 
     const handleSubmit = async e => {
         e.preventDefault();
-        const post = {
-            title,
-            content
+        const newPost = {
+            title: post.title,
+            author: post.author,
+            image: post.image,
+            content: post.content
         };
-        await axios.post('http://localhost:3000/posts', post);
+        await axios.post('http://localhost:3000/posts', newPost);
         navigate('/');
     }
 
